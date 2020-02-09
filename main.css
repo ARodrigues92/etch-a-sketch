@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+
+#main-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#selectors-container{
+    margin-bottom: 1vh;
+}
+
+#selectors-container p{
+    display: inline;
+}
+
+#sketch-container-border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36vw;
+    height: 36vh;
+    background-color: red;
+}
+
+#sketch-container{
+    width: 35vw;
+    height: 35vh;
+    display: grid;
+}
+
+.cell{
+    background-color: white;
+}
