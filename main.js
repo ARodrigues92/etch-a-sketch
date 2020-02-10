@@ -28,7 +28,7 @@ function create (){
 
 function edit (){
 
-    cells = document.querySelectorAll(".cell");  //why?
+    cells = document.querySelectorAll(".cell");
 
     cells.forEach(function (cell){
         container.removeChild(cell);
@@ -51,8 +51,6 @@ function edit (){
             cell.style.backgroundColor = color;
         });
     });
-
-    
 }
 
 
@@ -85,7 +83,7 @@ colorSelection.addEventListener("change", function(){
     color = colorSelection.value;
 });
 
-let sizeSelection = document.querySelector("#size");
+let sizeSelection = document.querySelector("#size-selector");
 
 sizeSelection.addEventListener("change", function(){
     size = sizeSelection.value;

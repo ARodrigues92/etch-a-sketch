@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: #617988;
 }
 
 #main-container{
@@ -10,26 +11,71 @@ body{
     align-items: center;
 }
 
+h1{
+    color: #daa91b;
+}
+
 #selectors-container{
-    margin-bottom: 1vh;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center-v{
+    display: flex;
+    align-items: center;
+}
+
+button{
+    margin-right: 0;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 #selectors-container p{
-    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    color: #daa91b;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#size-selector{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 75px;
+    height: 15px;
+    border-bottom: 5px;
+}
+
+#size-selector::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px; 
+    height: 10px; 
+    background: #887061;
+    cursor: pointer; 
+}
+
+#size-selector::-moz-range-thumb {
+    width: 10px; 
+    height: 10px; 
+    background: #887061; 
+    cursor: pointer; 
 }
 
 #sketch-container-border{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 36vw;
-    height: 36vh;
-    background-color: red;
+    border: 7px solid #887061;
+    border-radius: 2%;
 }
 
 #sketch-container{
-    width: 35vw;
-    height: 35vh;
+    width: 500px;
+    height: 500px;
     display: grid;
 }
 

@@ -9,21 +9,35 @@
     </head>
 
     <body>
-
         <div id="main-container">
 
+            <h1>Etch-a-Sketch</h1>
+
             <div id="selectors-container">
-                <button type="button" id="to-white">White</button>
-                <button type="button" id="to-black">Black</button>
-                <button type="button" id="reset">Reset</button>
-                <input type="color" id="color" value="#000000">
-                <input type="range" id="size" min="1" max="100" value="16">
-                <p id="range-value">16</p>
+
+                <div id="buttons-container">
+                    <button type="button" id="to-white">Eraser</button>
+                    <button type="button" id="to-black">Black</button>
+                    <button type="button" id="reset">Reset</button>
+                </div>
+
+                <div class="center-v">
+                    <P>Color:</P>
+                    <input type="color" id="color" value="#000000">
+                </div>
+
+                <div class="center-v">
+                    <p>Size:</p>
+                    <input type="range" id="size-selector" min="1" max="100" value="16">
+                    <p id="range-value">16</p>
+                </div>
+
             </div>
 
             <div id="sketch-container-border">
                 <div id="sketch-container">
-            </div>
+
+                </div>
             </div>
         </div>
         
