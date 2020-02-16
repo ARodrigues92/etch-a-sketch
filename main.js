@@ -6,8 +6,8 @@ let color = "black";
 let cells;
 
 function create (){
-    for(x=0;x<size;x++){
-        for(y=0;y<size;y++){
+    for(let x=0;x<size;x++){
+        for(let y=0;y<size;y++){
             let div = document.createElement("div");
             div.className = "cell";
             container.appendChild(div);
@@ -34,8 +34,8 @@ function edit (){
         container.removeChild(cell);
     });
 
-    for(x=0;x<size;x++){
-        for(y=0;y<size;y++){
+    for(let x=0;x<size;x++){
+        for(let y=0;y<size;y++){
             let div = document.createElement("div");
             div.className = "cell";
             container.appendChild(div);
@@ -57,19 +57,19 @@ function edit (){
 create ();   
 
 
-let toWhite = document.querySelector("#to-white");
+const toWhite = document.querySelector("#to-white");
 
 toWhite.addEventListener("click", function(){
     color = "white";
 });
 
-let toBlack = document.querySelector("#to-black");
+const toBlack = document.querySelector("#to-black");
 
 toBlack.addEventListener("click", function(){
     color = "black";
 });
 
-let reset = document.querySelector("#reset");
+const reset = document.querySelector("#reset");
 
 reset.addEventListener("click", function(){
     cells.forEach(function (cell){
@@ -77,13 +77,13 @@ reset.addEventListener("click", function(){
     });
 });
 
-let colorSelection = document.querySelector("#color");
+const colorSelection = document.querySelector("#color");
 
 colorSelection.addEventListener("change", function(){
     color = colorSelection.value;
 });
 
-let sizeSelection = document.querySelector("#size-selector");
+const sizeSelection = document.querySelector("#size-selector");
 
 sizeSelection.addEventListener("change", function(){
     size = sizeSelection.value;
